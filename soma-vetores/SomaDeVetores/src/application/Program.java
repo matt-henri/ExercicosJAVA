@@ -13,14 +13,13 @@ public class Program {
 		int n;
 		double soma, media;
 		
-		System.out.print("Quantos números vai Digitar: ");
+		System.out.print("Quantos números vai digitar? ");
 		n = sc.nextInt();
 		
 		double[] vetor = new double[n];
 		
-		
 		for (int i = 0; i < n; i++) {
-			System.out.print("Digite um numero: ");
+			System.out.print("Digite um número: ");
 			vetor[i] = sc.nextDouble();
 		}
 		
@@ -33,13 +32,12 @@ public class Program {
 		
 		System.out.print("Valores = ");
 		
-		for (int i = 0; i < n; i++) {
-			System.out.printf("%.2f  -  ", vetor[i]);
+		for (int i = 0 ; i < n; i++) {
+			System.out.printf("%.2f  ", vetor[i]);
 		}
 		
-		
-		System.out.printf("\nSoma = %.2f\n", soma);
-		System.out.printf("Medida = %.2f", media);
+		System.out.printf("\nSoma = %.2f", soma);
+		System.out.printf("\nMédia = %.2f", media);
 		
 		
 		
