@@ -7,31 +7,28 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("Quantos números vai digitar? ");
-		int n = sc.nextInt();
-		
-		int[] vet = new int[n];
-		
-		for (int i = 0; i < n; i++) {
-			System.out.print("Digite um número: ");
-			vet[i] = sc.nextInt();
+	Locale.setDefault(Locale.US);
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.print("Quanos números vai digitar? ");
+	int n = sc.nextInt();
+	
+	int[] vet = new int[n];
+	
+	for (int i = 0; i < n; i++) {
+		System.out.print("Digite um número: ");
+		vet[i] = sc.nextInt();
+	}
+	
+	System.out.println("Números Negativos: ");
+	for (int i = 0; i < n; i++) {
+		if (vet[i] < 0 ) {
+			System.out.println(vet[i]);
 		}
-		
-		System.out.println("Números Negativos: ");
-		
-		for (int i = 0; i < n; i++) {
-			if (vet[i] < 0 ) {
-				System.out.println(vet[i]);
-			}
-		}
-		
-		
-		
-		sc.close();
-		
+	}
+	
+	
+	sc.close();
 		
 		
 	}
