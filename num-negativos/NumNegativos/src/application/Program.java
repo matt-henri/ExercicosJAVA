@@ -10,19 +10,18 @@ public class Program {
 	Locale.setDefault(Locale.US);
 	Scanner sc = new Scanner(System.in);
 	
-	System.out.print("Quanos números vai digitar? ");
+	System.out.print("Quantos números vai digitar? ");
 	int n = sc.nextInt();
 	
 	int[] vet = new int[n];
-	
 	for (int i = 0; i < n; i++) {
 		System.out.print("Digite um número: ");
 		vet[i] = sc.nextInt();
 	}
 	
-	System.out.println("Números Negativos: ");
+	System.out.println("\nNúmeros Negativos: ");
 	for (int i = 0; i < n; i++) {
-		if (vet[i] < 0 ) {
+		if (vet[i] < 0 ) { 
 			System.out.println(vet[i]);
 		}
 	}
