@@ -13,7 +13,7 @@ public class Program {
 		int n;
 		double soma, media;
 		
-		System.out.print("Quantos números vai digitar? ");
+		System.out.print("Quantos numeros você vai digitar? ");
 		n = sc.nextInt();
 		
 		double[] vetor = new double[n];
@@ -30,16 +30,15 @@ public class Program {
 		
 		media = soma / n;
 		
-		System.out.print("Valores = ");
-		
-		for (int i = 0 ; i < n; i++) {
-			System.out.printf("%.2f  ", vetor[i]);
+		System.out.print("\nValores = ");
+		for (int i = 0; i < n; i++) {
+			System.out.printf("%.2f   ", vetor[i]);
 		}
 		
-		System.out.printf("\nSoma = %.2f", soma);
+		System.out.printf("\n\nSoma = %.2f", soma);
 		System.out.printf("\nMédia = %.2f", media);
-		
-		
+				
+				
 		
 		sc.close();
 
