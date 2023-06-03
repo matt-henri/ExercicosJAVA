@@ -10,31 +10,25 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int n, pares;
+		int n;
 		
-		System.out.print("Quantos números vai digitar? ");
+		System.out.print("Quantos numeros vc vai digitar? ");
 		n = sc.nextInt();
 		
-		int[] vetor = new int[n];
+		
+		int vetor[] = new int[n];
 		
 		for (int i = 0; i < n; i++) {
 			System.out.print("Digite um número: ");
 			vetor[i] = sc.nextInt();
 		}
 		
-		pares = 0;
-		
-		System.out.println("\nNúmeros Pares: ");
-		
+		System.out.println("Números Negativos: ");
 		for (int i = 0; i < n; i++) {
-			if (vetor[i] % 2 == 0) {
-				System.out.print(vetor[i] + " ");
-				pares++;
+			if (vetor[i] < 0) {
+				System.out.println(vetor[i] + " ");
 			}
 		}
-		
-		System.out.printf("\n\nQuantidade de números pares = %d", pares);
-	
 		
 		
 		sc.close();
