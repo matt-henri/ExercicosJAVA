@@ -12,36 +12,37 @@ public class Program {
 		
 		int n;
 		
-		
-		System.out.print("Quantos valores vai ter cada vetor? ");
+		System.out.print("Quantos valores vai digitar em cada vetor? ");
 		n = sc.nextInt();
+		
 		
 		int[] vetorA = new int[n];
 		int[] vetorB = new int[n];
 		int[] soma   = new int[n];
 		
 		
-		System.out.println("Ditite os valores do vetor A: ");
-		for (int i = 0; i < n; i++) {
-			
+		System.out.println("Digite os valores do vetor A: ");
+		for ( int i = 0; i < n; i++) {
 			vetorA[i] = sc.nextInt();
 		}
 		
-		System.out.println("Ditite os valores do vetor B: ");
-		for (int i = 0; i < n; i++) {
-			
+		System.out.println("Digite os valores do vetor B: ");
+		for ( int i = 0; i< n; i++) {
 			vetorB[i] = sc.nextInt();
 		}
+		
 		
 		for (int i = 0; i < n; i++) {
 			soma[i] = vetorA[i] + vetorB[i];
 		}
 		
-		System.out.println("Valor resultante:");
+		System.out.println("Valor Resultante: ");
 		
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++ ) {
 			System.out.printf("%d\n", soma[i]);
 		}
+		
+	
 		
 		sc.close();
 			
